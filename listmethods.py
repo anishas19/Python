@@ -12,8 +12,8 @@ print(num_copy)
 matrix=[[1,2,3],[4,5,6],[7,8,9]]
 for sublist in matrix:
     print(sublist)  
-    for i in sublist: 
-        print(i)
+    # for i in sublist: 
+    #     print(i)
     
 numbers=list(range(1,11))     #generate list in range
 print(numbers)
