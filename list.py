@@ -1,42 +1,51 @@
-# numbers=[1,2,3,4]
-# print(numbers)
-# print(type(numbers))
-# print(numbers[2])
-# # numbers.append(2.5)
-# numbers.insert(2,9)
-# print(numbers)
+numbers=[1,2,3,4]
+print(numbers)
 
-# mixed=[2,'ani','true']
-# print(mixed)
-#  mixed[1]="two"
-# mixed[1:]="two"
-# mixed[1]="two","three"
-# print (mixed)
-# print(mixed[-1])
+# check type of list
+print(type(numbers))
 
-# numbers.insert(1,mixed)
-# print(numbers)
+# list indexing
+print(numbers[2])
 
-# numbers.pop()
-# del numbers[1]
-# print(numbers)
+# method to add element in list
+numbers.append(2.5)      #using append method
+numbers.insert(2,9)      #using insert method
+print(numbers)
 
-# user_info=['anisha','20']
-# print(','.join(user_info))
+mixed=[2,'ani','true']
+print(mixed)
+mixed[1]="two"
+mixed[1:]="two"
+mixed[1]="two","three"
+print (mixed)
+print(mixed[-1])
 
-# fruits=['apple','banana','cherry']
-# for i in fruits:
-#     print(i)
+numbers.insert(1,mixed)
+print(numbers)
 
-# square=[i**2 for i in range(1,11)]
-# print(square)
+numbers.pop()
+del numbers[1]
+print(numbers)
 
-# names=['john','anisha','amita']
-# namefst=[name[0] for name in names]
-# print(namefst)
+user_info=['anisha','20']
+print(','.join(user_info))
 
-# namervrse=[name[::-1] for name in names]
-# print(namervrse)
+fruits=['apple','banana','cherry']
+for i in fruits:
+    print(i)
+
+
+#LIST COMPREHENSION
+
+square=[i**2 for i in range(1,11)]
+print(square)
+
+names=['john','anisha','amita']
+namefst=[name[0] for name in names]
+print(namefst)
+
+namervrse=[name[::-1] for name in names]
+print(namervrse)
 
 evn=[num for num in range(1,11) if num%2==0]
 print(evn)

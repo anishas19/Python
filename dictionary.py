@@ -1,28 +1,33 @@
 user_info={'name':'anisha', 'age':20, 'city':'New York'}
 print(user_info)
 print(type(user_info))
+print(user_info['name'])
+# print(user_info['harshit'])    show keyerror
 
-for i in user_info:        
+user={}                          #create empty dictionary
+user['name']='shob'              #insert key value 
+user['age']=21
+print(user)
+
+#two method to print key of dictionary
+for i in user_info:              #first
     print(i)
 
-for m in user_info.keys():
+for m in user_info.keys():       #second
     print(m)
 
-for j in user_info:
+#two method to print values of keys of dictionary
+for j in user_info:               #first
     print(user_info[j])
 
-for k in user_info.values():
+for k in user_info.values():       #second
     print(k)
 
+#method for print key and value
 for l,n in user_info.items():
     print(n)
     print(l)
 
-d=dict.fromkeys(('country','phone'),None)
-print(d)
-
-e=dict.fromkeys('abc',None)
-print(e)
-
-e.clear()
-print(e)
+# method to clear dictionary
+user_info.clear()
+print(user_info)
